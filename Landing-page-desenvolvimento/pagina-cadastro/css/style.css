@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap");
+
+@font-face {
+  font-family: 'Cartoo Nature';
+  src: url('/fontes/CartooNature.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 0%;
+  box-sizing: border-box;
+  background-color: #3C6F34;
+  color: #F8F9FA;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.pagina{
+  padding: 3%;
+  margin: 5% 0 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.cadastro{
+  display: flex;
+  flex-direction: column;
+  background: #0F3A0D;
+  padding: 2% 2%;
+  border-radius: 20px;
+  gap: 20px;
+}
+.titulo{
+  font-family: 'Cartoo Nature', 'poppins';
+  font-size: 4rem;
+  font-weight: 400;
+  color: #F8F9FA;
+  position: relative;
+}
+.titulo::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 150px;
+  background: #DAB2DB;
+}
+
+.dados{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.input-box{
+ width: 100%;
+ margin-top: 20px;
+}
+.input-box input{
+  width: 100%;
+  outline: none;
+  background: #95D983;
+  border: 1px solid #95D983;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'roboto';
+  font-size: 1rem;
+  border-bottom-width: 3px;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #3C6F34;
+}
+.coluna{
+  display: flex;
+  column-gap: 15px;
+}
+
+.botao{
+  margin: 8% 5% 0% 5%;
+  display: flex;
+  justify-content: center;
+}
+.bt_cadastrar{
+  width: 283.48px;
+  height: 65px;
+  font-size: 2rem;
+  font-weight: 700;
+  color:#390D3A;
+  background: #DAB2DB;
+  border: 5px solid #401741;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.botao input:hover{
+  background-color:hsl(300, 52%, 86%);
+}
+.login{
+  margin: 1% 5% 5%;
+  display: flex;
+  justify-content: center;
+  font-size: .75rem;
+}
+.login a{
+  text-decoration: none;
+  color: #DAB2DB;
+}
+.login a:hover{
+  color: #F8F9FA;
+}
+
+img{
+  width: 50%;
+}
+p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.footer{
+  background-color: #0F3A0D;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.tags{
+  width: 94px;
+  height: 31px;
+}
+.tags1{
+  width: 79px;
+  height: 31px;
+}
+.tags2{
+  width: 84px;
+  height: 31px;
+}
+.tags3{
+  width: 85px;
+  height: 31px;
+}
+.tags4{
+  width: 67px;  
+  height: 31px;
+}
+.footer_divEsquerda{
+  display: flex;
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.footer_divMeio{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.footer_divDireita{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.footer_imagem{
+  width: 324px;
+  height: 212px;
+}
+
+@media (max-width:1000px) {
+  .conteiner{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pagina{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .cadastro{
+    padding: 5%;
+  }
+  .coluna{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img{
+    width: 80%;
+  }
+}
