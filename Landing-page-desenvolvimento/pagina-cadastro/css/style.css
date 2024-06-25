@@ -215,4 +215,20 @@ p{
   img{
     width: 80%;
   }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_divEsquerda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_divMeio{
+    padding: 5%;
+  }
 }
