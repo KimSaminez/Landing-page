@@ -72,7 +72,7 @@ body{
  width: 100%;
  margin-top: 20px;
 }
-.input-box input{
+.input-box input, select{
   width: 100%;
   outline: none;
   background: #95D983;
