@@ -13,13 +13,24 @@
 
 <body>
     <header class="cabecalho">
-        <img class="logo" src="imagens/logo.png" alt="Logo do jogo.">
         <nav class="cabecalho_navegacao">
-            <a class="cabecalho_links" href="#home">Home</a>
-            <a class="cabecalho_links" href="#sobre-nos">Sobre Nós</a>
-            <a class="cabecalho_links" href="#contato">Contato</a>
-            <a class="cabecalho_inscreva" href="paginas/cadastro.html">Inscreva-se</a>
+            <img class="logo" src="imagens/logo.png" alt="Logo do jogo.">
+            <div class="item_nav">
+                <a class="cabecalho_links" href="#home">Home</a>
+                <a class="cabecalho_links" href="#sobre">Sobre Nós</a>
+                <a class="cabecalho_links" href="#contato">Contato</a>
+                <a class="cabecalho_inscreva" href="">Inscreva-se</a>
+            </div>
+            <div class="menu_icone">
+                <button onclick="showButton()"><img src="imagens/menu.png" alt="menu"></button>
+            </div>
         </nav>
+        <div class="menu_mobile">
+            <a class="mobile_links" href="#home">Home</a>
+            <a class="mobile_links" href="#sobre">Sobre Nós</a>
+            <a class="mobile_links" href="#contato">Contato</a>
+            <a class="mobile_inscreva" href="">Inscreva-se</a>
+        </div>
     </header>
     <main class="paginaInicial">
         <section class="paginaInicial_home" id="home">
