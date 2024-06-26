@@ -396,7 +396,7 @@ h2 {
 }
 
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (max-width: 767px) {
     #sobre-nos {
         text-align: center;
         align-items: center;
