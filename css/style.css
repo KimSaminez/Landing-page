@@ -319,7 +319,7 @@ p {
 
 @media (max-width: 1000px) {
     .cabecalho {
-        width: 100%;
+        width: 100vw;
         padding: 0 40px 0 40px;
     }
 
