@@ -36,6 +36,7 @@ h2 {
 
 #sobre-nos .content {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
