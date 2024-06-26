@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Cartoo Nature';
-  src: url('/fontes/CartooNature.otf') format('opentype');
+  src: url('../fontes/CartooNature.otf') format('opentype');
 }
 
 *{
