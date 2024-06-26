@@ -43,6 +43,7 @@ body {
     background-color: #2E7D32;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
@@ -55,6 +56,9 @@ body {
 }
 
 .cabecalho_navegacao {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
     gap: 40px;
 }
@@ -63,6 +67,54 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--cor-titulo);
     font-size: 1.5rem;
+}
+
+.mobile_links {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+}
+
+.cabecalho_inscreva {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--cor-textoBotao);
+}
+
+.mobile_inscreva {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--cor-textoBotao);
+}
+
+.cabecalho_inscreva:hover {
+    transition-duration: 0.5s;
+    color: var(--cor-textoBotao);
+}
+
+.mobile_inscreva:hover {
+    transition-duration: 0.5s;
+    color: var(--cor-textoBotao);
+}
+
+.cabecalho_links:hover {
+    transition-duration: 0.5s;
+    color: var(--cor-textoBotao);
+}
+
+.mobile_links:hover {
+    transition-duration: 0.5s;
+    color: var(--cor-textoBotao);
+}
+
+.menu_icone {
+    display: none;
+}
+
+.menu_mobile {
+    display: none;
 }
 
 .cabecalho_inscreva {
@@ -347,8 +399,7 @@ p {
     }
 }
 
-@media (max-width: 600px) {
-    .paginaInicial_home {
+.paginaInicial_home {
         background-size: 150%;
         flex-direction: column;
         gap: 20px;
@@ -367,5 +418,34 @@ p {
         align-self: center;
     }
 
+    .cabecalho_links,
+    .cabecalho_inscreva {
+        display: none;
+    }
 
+    .menu_icone {
+        display: block;
+    }
+
+    .menu_icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu_mobile {
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mobile_inscreva {
+        border: none;
+    }
+
+    .open {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
 }
