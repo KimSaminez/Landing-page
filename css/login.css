@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap");
+
+@font-face {
+  font-family: 'Cartoo Nature';
+  src: url('/fontes/CartooNature.otf') format('opentype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: #59924F;
+  color: #F8F9FA;
+}
+
+.pagina{
+  margin: 5% 0 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  gap: 100px;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F3A0D;
+  padding: 2% 5% 5%;
+  border-radius: 20px;
+}
+.topo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cartoo Nature';
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.dados{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.input-box{
+  width: 100%;
+  margin-top: 20px;
+}
+  .input-box input{
+    width: 100%;
+    outline: none;
+    background-color: #95D983;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'roboto';
+    font-size: 1rem;
+    border-bottom-width: 3px transparent;
+  }
+  .input-box input:focus,
+  .input-box input:valid{
+    color: #3C6F34;
+  }
+
+  .botao{
+    margin: 8% 5% 0% 5%;
+    display: flex;
+    justify-content: center;
+  }
+  .bt_entar{
+    width: 283.48px;
+    height: 65px;
+    font-size: 2rem;
+    font-weight: 700;
+    color:#390D3A;
+    background: #DAB2DB;
+    border: 5px solid #401741;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .bt_entrar:hover{
+    background-color:hsl(300, 52%, 86%);
+}
+
+.opcoes{
+  display:flex;
+  align-items: center;
+}
+.opcoes a{
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #F8F9FA;
+}
+.opcoes a:hover{
+  color:#DAB2DB;
+}
+
+.cadastrar{
+  margin: 1% 5% 5%;
+  display: flex;
+  justify-content: center;
+  font-size: .70rem;
+  font-weight: 400;
+}
+.cadastrar a{
+  text-decoration: none;
+  color: #DAB2DB;
+}
+.cadastrar a:hover{
+  color: #F8F9FA;
+}
+
+@media (max-width:1000px) {
+  .pagina{
+    width: 100%;
+  }
+  .cadastro{
+    padding: 5%;
+  }
+.logo{
+    width: 50%;
+  }
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
