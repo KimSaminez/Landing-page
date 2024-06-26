@@ -1,0 +1,511 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    color: #F8F9FA;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+#sobre-nos {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E7D32;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#sobre-nos .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+}
+
+#sobre-nos .text {
+    width: 580px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+#sobre-nos .img-sobre img, #reviews .review-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#sobre-nos .imagem{
+    width: auto;
+}
+
+#sobre-nos .imagem img{
+    max-width: 90%;
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 500px;
+    padding: 20px;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9em;
+    max-width: 340px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 15px;
+    height: 100px;
+    margin: 0;
+}
+
+.review-text p{
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.review-text p:last-child {
+    font-size: 1.2em;
+    color: gold;
+}
+
+.review-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    box-sizing: border-box;
+    min-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    padding-left: 0px;
+    gap: 40px;
+    
+}
+
+.base-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 20px;
+    gap: 50px;
+    width: 100%;
+}
+
+.base-reviews img {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    gap: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+}
+
+.carousel img {
+    width: 30%;
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
+}
+
+.indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(223, 220, 220, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: purple;
+}
+
+#barra-sobre {
+    width: 24%;
+    height: 3px;
+    background-color: #DAB2DB;
+    margin-top: 2px;
+}
+
+#barra-reviews {
+    width: 20%;
+    height: 3px;
+    background-color: #4B1F4C;
+    margin-top: -8px;
+}
+
+.star-count {
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #sobre-nos{
+        width: auto;
+    }
+
+    #sobre-nos .text {
+        width: 60%;
+        font-size: 0.9rem; 
+    }
+
+    #sobre-nos .content {
+        width: 100%;
+        gap: 0px; 
+    }
+
+    .sobre {
+        width: 70%; 
+        gap: 20px; 
+    }
+
+    .sobre{
+        align-items: center;
+        width: 50%;
+        gap: 30px;
+    }
+
+    #barra-sobre {
+        width: 30%; 
+        
+    }
+
+    #sobre-nos .img-sobre img,
+    #reviews .review-item img {
+        max-width: auto; 
+    }
+
+    #sobre-nos .imagem{
+        width: 30%;
+    }
+
+    #sobre-nos .imagem img {
+        width: 70%;
+    }
+
+    #reviews{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .reviews-container{
+        max-width: 70%;
+        
+    }
+
+    .base-reviews{
+        margin-bottom:0;
+    }
+
+    .base-reviews img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .review-text{
+        font-size: 0.8em;
+        width: 280px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .carousel img {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(223, 220, 220, 0.3);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .indicator.active {
+        background-color: purple;
+    }
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    #sobre-nos .text{
+        width: 60%;
+        font-size: 0.7rem;
+
+    }
+    #sobre-nos .content{
+        gap:0;
+    }
+
+    .sobre{
+        align-items: center;
+        width: 60%;
+        gap: 30px;
+    }
+    
+    #barra-sobre {
+        width: 15%;
+        height: 3px;
+        background-color: #DAB2DB;
+        margin-top: 2px;
+        
+    }
+
+    #sobre-nos .img-sobre img,
+    #reviews .review-item img {
+        max-width: 50%; 
+    }
+
+    #sobre-nos .imagem{
+        width: 35%;
+    }
+
+    #sobre-nos .imagem img{
+        width: 80%;
+    }
+
+    #reviews{
+        justify-content: center;
+        align-items: center;
+        height:auto;
+    }
+
+    .reviews-container{
+        max-width: 80%;
+        
+    }
+
+    .base-reviews{
+        margin-bottom:0;
+    }
+
+    .base-reviews img {
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .review-text{
+        font-size: 0.7em;
+        width: 175px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .carousel img {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+
+    .indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(223, 220, 220, 0.3);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .indicator.active {
+        background-color: purple;
+    }
+ 
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+    #sobre-nos{
+        text-align: center;
+        align-items: center;
+    }
+    
+    #sobre-nos .sobre{
+        text-align: center;
+        align-items: center;
+    }
+    
+    #sobre-nos .text{
+        width: 60%;
+        font-size: 0.8rem;
+
+    }
+
+    #sobre-nos .content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #barra-sobre {
+        width: 10%;
+        height: 3px;
+        background-color: #DAB2DB;
+        margin-top: 2px;
+        transform: translateX(70px);
+        
+    }
+
+    #sobre-nos .img-sobre img,
+    #reviews .review-item img {
+        width: 50%; 
+    }
+
+    #sobre-nos .imagem img{
+        max-width: 60%;
+    }
+
+
+    .reviews-container{
+        max-width: 50%;
+    }
+
+    .base-reviews {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 20px;
+        gap: 50px;
+        width: 100%;
+    }
+
+    #reviews {
+        height: auto;
+        justify-content: center;
+    }
+
+    #reviewscarousel .sobre{
+        text-align: center;
+        align-items: center;
+    }
+
+    .base-reviews img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .carousel img {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+
+    .review-text{
+        font-size: 0.7em;
+        width: 150px;
+    }
+
+    .indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(223, 220, 220, 0.3);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .indicator.active {
+        background-color: purple;
+    }
+    
+
+
+}
