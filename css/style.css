@@ -399,7 +399,8 @@ p {
     }
 }
 
-.paginaInicial_home {
+@media (max-width: 600px) {
+    .paginaInicial_home {
         background-size: 150%;
         flex-direction: column;
         gap: 20px;
