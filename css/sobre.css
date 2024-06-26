@@ -12,6 +12,7 @@ header {
 }
 
 #sobre-nos {
+    box-sizing: border-box;
     width: auto;
     height: auto;
     margin: 0 auto;
