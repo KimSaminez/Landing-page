@@ -63,6 +63,12 @@ body {
     gap: 40px;
 }
 
+.item_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .cabecalho_links {
     font-family: var(--fonte-secundaria);
     color: var(--cor-titulo);
