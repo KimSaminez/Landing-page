@@ -86,7 +86,7 @@ body {
 
 .paginaInicial_home {
     width: auto;
-    background-image: url(Landing-page-main/assets/folha.png);
+    background-image: url('Landing-page-main/assets/folha.png');
     background-size: 80%;
     background-repeat: repeat-x;
     display: flex;
